@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--
+		
+		I, Max Blamauer, 000760618 certify that this material is my original work. 
+		No other person's work has been used without due acknowledgement. 
+		
+		-->
+
+        <title>Boston's Game of Dice!</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "diceGameStyle.css"> <!-- CSS Style Reference -->
+        <script src = "diceGameScript.js"></script> <!-- Java Script Reference -->
+
+        <!-- Style for button retrieved from: https://www.w3schools.com/css/css3_buttons.asp -->
+        <style type = "text/css">
+        
+        </style>
+
+    <head>
+
+    <body>
+        <div id = "gameBackground">      
+                <h1>Game of Dice!</h1>
+
+            <div id = "hideWhenValid">
+                <!--
+                    Error message for name validation
+                -->
+                <div id = errorMessage style = "display: none">
+
+                    <p>*Please type in a valid name*</p>
+                
+                </div>
+
+                <!--
+                    Gets players name and calls writeName() function on click
+                -->
+                <div id = "menuScreen">
+                    
+                    Player One's Name: <input type = "text" id = "name1"><br />
+                    Player Two's Name: <input type = "text" id = "name2">
+                    <br /><button class = "button" onclick = "writeNames()">Submit</button>
+                    <button class = "button" onclick = "helpButton()">Help</button>
+                </div>
+                
+            </div>
+
+                <!--
+                    Gets The Dice Roll and calls rollDice() function on click
+                -->
+                <div id = "sectionToHide" style = "display: none;">
+
+                <!--
+                    Displays players turn
+                -->
+                    <div id = "playerMessage">
+
+                        <h3 id = "player1Message" style = "display: none;"></h3>
+                        <h3 id = "player2Message" style = "display: none;"></h3>
+
+                    </div>
+
+                <!--
+                    Displays the dice
+                -->
+                    <div id = "die1" class = "dice">0</div>
+                    <div id = "die2" class = "dice">0</div>
+                    <div id = "die3" class = "dice">0</div>
+
+                    <br /><button class = "button" onclick = "rolldice()" id = "rollButton">Roll</button>
+                    <button class = "button" onclick = "helpButton()">Help</button>
+                    <button class = "button" onclick = "clearValues()">Restart</button>
+
+                <!--
+                    Displays the users roll
+                -->
+                    <h2 id = "status"></h2>
+
+                    <!-- Table displaying score-->
+                        <table> 
+                            <tr>
+                                <th id = "output1"></th>
+                                <th id = "output2" style = "border-right: none;"></th>
+                            </tr>
+                            <tr>
+                                <td id = "player1Score1" style = "float: right;"></td>
+                                <td id = "player2Score1" style = "border-right: none;"></td>
+                            </tr>
+                            <tr>
+                                <td id = "player1Score2" style = "float: right;"></td>
+                                <td id = "player2Score2" style = "border-right: none;"></td>
+                            </tr>
+                            <tr>
+                                <td id = "player1Score3" style = "float: right;"></td>
+                                <td id = "player2Score3" style = "border-right: none;"></td>
+                            </tr>
+                            <tr>
+                                <td id = "player1Total" style = "float: right;"></td>
+                                <td id = "player2Total" style = "border-right: none;"></td>
+                            </tr>
+                        </table>
+
+
+                </div>
+
+                <!--
+                    Displays The help sectio when the user clicks the help button
+                -->
+                <div id = "help" style = "display: none;">
+                            
+                    <h3>Login Help</h3>
+                    <ul>
+                        <li>Please enter a name</li>
+                        <li>The name cannot contain numbers</li>
+                        <li>The names cannot be left blank</li>
+                        <li>Both names must be filled out</li>
+                    </ul>
+
+                    <h3>Rules of Play</h3>
+                    <ul>
+                        <li>Players throw the dice for a total of three turns per player.</li>
+                        <li>Each turn, the player keeps the highest rolled dice</li>
+                        <li>Each turn, the highest dice is set aside and scored</li>
+                        <li>Repeat for player 2</li>
+                        <li>The player who scores the highest total wins the game.</li>
+                    </ul>
+
+                </div>
+
+        </div>   
+    </body>
+
+
+</html>

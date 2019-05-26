@@ -1,0 +1,152 @@
+
+         h1 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        #gameBackground {
+            display: inline-block;
+            padding: 15px 25px;
+            cursor: pointer;
+            text-align: center;
+            outline: none;
+            background-color: lightBlue;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 20px 20px 10px 10px rgb(87, 83, 83);
+        }
+
+        #playerMessage {
+            color: #3e8e41;
+            font-weight: bold;
+        }
+
+        body {
+
+            position: absolute;
+            bottom: 300;
+            max-width: 350px;
+            min-width: 350px;
+            margin-right: 25%;
+            margin-left: 25%;
+            background-color: rgba(69, 66, 66, 0.797);
+            padding: 10px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            border-radius: 50px;
+        }
+
+        .dice {
+            float: left;
+            width: 32px;
+            background: #F5F5F5;
+            border: #999 1px solid;
+            padding: 25px;
+            font-size: 24;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #names {
+            color: green;
+            font-weight: bold;
+        }
+
+        #errorMessage {
+            float: center;
+            color: red;
+        }
+
+        table {
+            width: 75%;
+            float: center;
+            margin-top: 10px;
+
+        }
+
+        th {
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+            float: center;
+        }
+
+        td {
+            border-right: 3px solid black;
+            float: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .button:hover {background-color: #3e8e41}
+          
+          .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+
+          .button {
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-right: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .button:hover {background-color: #3e8e41}
+          
+          .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+
+          #menuScreen {
+              position: sticky;
+          }
+
+          .sectionToHide {
+              position: fixed;
+          }
+
+          #help {
+            display: inline-block;
+            padding: 5px 25px;
+            margin-top: 30px;
+            cursor: pointer;
+            text-align: left;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 9px 9px #999;
+          }
+
+          input {
+            margin-top: 10px;
+          }
+          
+        
